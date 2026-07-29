@@ -1,0 +1,43 @@
+.dashboard-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.charts-grid-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.content-grid-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .charts-grid-row,
+  .content-grid-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chart-large,
+.chart-medium,
+.chart-small,
+.content-large,
+.content-small {
+  width: 100%;
+}
+
+/* Make medium charts occupy equal space when paired in a row */
+.charts-grid-row:has(.chart-medium) {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

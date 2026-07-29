@@ -1,0 +1,347 @@
+/* Messages Page Styles */
+
+.messages-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1.5rem;
+  min-height: calc(100vh - 160px);
+}
+
+.messages-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.new-message-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.new-message-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+.folder-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.folder-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  color: var(--text-secondary);
+}
+
+.folder-item:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.folder-item.active {
+  background: rgba(99, 102, 241, 0.15);
+  border-left: 3px solid var(--color-primary);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.folder-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.folder-count {
+  font-size: 0.8rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 20px;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+}
+
+.folder-item.active .folder-count {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Main Content Panel (List + Preview) */
+.messages-main-panel {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  overflow: hidden;
+  height: 100%;
+  min-height: calc(100vh - 160px);
+}
+
+@media (max-width: 1024px) {
+  .messages-main-panel {
+    grid-template-columns: 1fr;
+  }
+  .preview-pane {
+    display: none; /* Can be overlaid or toggleable */
+  }
+}
+
+.message-list-pane {
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.search-bar-container {
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  color: var(--text-muted);
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 0.75rem 0.75rem 2.25rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.search-input:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* Message Items */
+.message-items {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.message-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  border: 1px solid transparent;
+}
+
+.message-item:hover {
+  background: var(--bg-tertiary);
+}
+
+.message-item.active {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: var(--border-color);
+}
+
+.message-item.unread {
+  border-left: 3px solid var(--color-primary);
+}
+
+.message-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.message-sender {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.message-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.message-subject-line {
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.message-item.unread .message-sender,
+.message-item.unread .message-subject-line {
+  color: #fff;
+}
+
+.message-snippet {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status-badge-inline {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.status-unread {
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--color-primary);
+}
+
+.status-read {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+}
+
+/* Preview Pane */
+.preview-pane {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.preview-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-muted);
+  gap: 1rem;
+}
+
+.preview-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.preview-subject {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.preview-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.preview-sender-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.preview-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--color-primary);
+  border: 1px solid var(--border-color);
+}
+
+.preview-sender-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.preview-sender-email {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.preview-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.preview-body {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.preview-actions {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  gap: 1rem;
+}
+
+/* Modal Form Styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.form-textarea {
+  min-height: 150px;
+  padding: 0.75rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: inherit;
+  outline: none;
+  resize: vertical;
+  transition: var(--transition-smooth);
+}
+
+.form-textarea:focus {
+  border-color: var(--border-focus);
+}

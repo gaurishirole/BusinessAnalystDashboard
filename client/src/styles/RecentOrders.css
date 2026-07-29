@@ -1,0 +1,54 @@
+.recent-orders-card {
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.orders-table th {
+  padding: 1rem 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.orders-table td {
+  padding: 1rem 0.75rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.orders-table tr:hover td {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.order-id {
+  font-family: monospace;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.customer-name {
+  font-weight: 500;
+}
+
+.order-date {
+  color: var(--text-secondary);
+}
+
+.order-amount {
+  font-weight: 600;
+}
