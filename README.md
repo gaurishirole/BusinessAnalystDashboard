@@ -1,4 +1,4 @@
-# 📊 InsightPro - SaaS Business Analytics Dashboard
+# 📊Business Analytics Dashboard
 
 A modern, responsive, and role-based Business Analytics Dashboard built using **React.js**, **Node.js**, **Express.js**, **PostgreSQL**, and **Sequelize ORM**. The application helps businesses monitor sales, revenue, customers, orders, products, and overall business performance through interactive dashboards and analytics.
 
@@ -381,4 +381,3 @@ Frontend Developer | React.js Developer
 
 ---
 
-## ⭐ If you like this project, don't forget to star the repository.
