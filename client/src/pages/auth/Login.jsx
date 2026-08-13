@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import Button from '../../components/common/Button';
 import Input from '../../components/common/Input';
-import { Sparkles } from 'lucide-react';
+import { TrendingUp } from 'lucide-react';
 import '../../styles/Auth.css';
 
 export default function Login() {
@@ -28,12 +28,12 @@ export default function Login() {
     <div className="auth-container">
       <div className="auth-card glass-panel animate-fade-in">
         <div className="auth-brand">
-          <Sparkles className="brand-icon" size={28} />
-          <h2>Business Analytics</h2>
+          <TrendingUp className="brand-icon" size={28} />
+          <h2>Finance Analytics</h2>
         </div>
         <div className="auth-header">
           <h3>Welcome Back</h3>
-          <p>Login to manage your business analytics</p>
+          <p>Login to manage your finance analytics</p>
         </div>
 
         {error && <div className="auth-error">{error}</div>}

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../../components/common/Button';
 import Input from '../../components/common/Input';
-import { Sparkles } from 'lucide-react';
+import { TrendingUp } from 'lucide-react';
 import '../../styles/Auth.css';
 
 export default function ForgotPassword() {
@@ -18,8 +18,8 @@ export default function ForgotPassword() {
     <div className="auth-container">
       <div className="auth-card glass-panel animate-fade-in">
         <div className="auth-brand">
-          <Sparkles className="brand-icon" size={28} />
-          <h2>Business Analytics</h2>
+          <TrendingUp className="brand-icon" size={28} />
+          <h2>Finance Analytics</h2>
         </div>
 
         {sent ? (

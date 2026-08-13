@@ -86,8 +86,8 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
   return (
     <aside className={`sidebar glass-panel ${isOpen ? 'sidebar-open' : ''}`}>
       <div className="sidebar-brand">
-        <Sparkles className="brand-icon" size={24} />
-        <h2>Business Analytics</h2>
+        <TrendingUp className="brand-icon" size={24} />
+        <h2>Finance Analytics</h2>
       </div>
 
       <nav className="sidebar-nav">

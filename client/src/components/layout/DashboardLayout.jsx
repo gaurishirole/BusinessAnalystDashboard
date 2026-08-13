@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
@@ -11,10 +11,14 @@ export default function DashboardLayout({ children, title }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
   const { setSearchQuery } = useSearch();
+  const prevPathname = useRef(location.pathname);
 
   useEffect(() => {
-    setSearchQuery('');
-  }, [location.pathname, setSearchQuery]);
+    if (prevPathname.current !== location.pathname) {
+      setSearchQuery('');
+      prevPathname.current = location.pathname;
+    }
+  }, [location.pathname]);
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
