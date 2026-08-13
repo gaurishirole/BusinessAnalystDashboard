@@ -3,33 +3,33 @@
 :root {
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   
-  /* Dark Mode Palette (Default for high-end look) */
-  --bg-primary: #090d16;
-  --bg-secondary: rgba(17, 24, 39, 0.7);
-  --bg-tertiary: rgba(31, 41, 55, 0.5);
+  /* Dark Mode Palette (Gold & Cyan Theme matching user image) */
+  --bg-primary: #070a13;
+  --bg-secondary: #0d1222;
+  --bg-tertiary: #151c33;
   
   --border-color: rgba(255, 255, 255, 0.08);
-  --border-focus: rgba(99, 102, 241, 0.5);
+  --border-focus: rgba(226, 176, 66, 0.5); /* Gold focus */
   
-  --text-primary: #f3f4f6;
-  --text-secondary: #9ca3af;
-  --text-muted: #6b7280;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
   
   /* Accent Colors */
-  --color-primary: #6366f1; /* Indigo */
-  --color-primary-hover: #4f46e5;
-  --color-secondary: #a855f7; /* Purple */
+  --color-primary: #e2b042; /* Gold */
+  --color-primary-hover: #cca03c;
+  --color-secondary: #38bdf8; /* Sky Cyan */
   --color-success: #10b981; /* Emerald */
   --color-warning: #f59e0b; /* Amber */
   --color-danger: #ef4444; /* Rose */
   --color-info: #06b6d4; /* Cyan */
   
   /* Shadows & Glassmorphism */
-  --glass-bg: rgba(17, 24, 39, 0.6);
-  --glass-blur: blur(16px);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  --glass-border: 1px solid rgba(255, 255, 255, 0.07);
-  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --glass-bg: rgba(13, 18, 34, 0.85);
+  --glass-blur: blur(20px);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.05);
+  --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -39,20 +39,20 @@
 
 [data-theme='light'] {
   --bg-primary: #f8fafc;
-  --bg-secondary: rgba(255, 255, 255, 0.8);
-  --bg-tertiary: rgba(241, 245, 249, 0.9);
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f1f5f9;
   
-  --border-color: rgba(0, 0, 0, 0.06);
-  --border-focus: rgba(99, 102, 241, 0.3);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-focus: rgba(226, 176, 66, 0.4);
   
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --text-muted: #94a3b8;
   
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.04);
   --glass-border: 1px solid rgba(255, 255, 255, 0.4);
-  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04);
 }
 
 * {

@@ -70,7 +70,7 @@ export default function Analytics() {
               <p className="stats-title">Gross Revenue</p>
               <h3 className="stats-value">${financialAnalytics.grossRevenue.toLocaleString('en-US', { minimumFractionDigits: 2 })}</h3>
             </div>
-            <div className="stats-icon-container" style={{ background: 'rgba(99, 102, 241, 0.15)', color: 'var(--color-primary)' }}>
+            <div className="stats-icon-container" style={{ background: 'rgba(226, 176, 66, 0.15)', color: 'var(--color-primary)' }}>
               <DollarSign size={20} />
             </div>
           </div>
@@ -512,7 +512,7 @@ export default function Analytics() {
         </div>
         <div className="stats-card glass-panel">
           <p className="stats-title">Net Profit</p>
-          <h3 className="stats-value" className="text-success">${financialAnalytics.netProfit.toLocaleString()}</h3>
+          <h3 className="stats-value text-success">${financialAnalytics.netProfit.toLocaleString()}</h3>
           <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>Revenue minus Expenses</p>
         </div>
         <div className="stats-card glass-panel">

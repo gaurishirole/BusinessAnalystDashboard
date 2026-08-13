@@ -31,7 +31,7 @@
 
 .new-message-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 12px rgba(226, 176, 66, 0.4);
 }
 
 .folder-list {
@@ -57,7 +57,7 @@
 }
 
 .folder-item.active {
-  background: rgba(99, 102, 241, 0.15);
+  background: rgba(226, 176, 66, 0.15);
   border-left: 3px solid var(--color-primary);
   color: var(--text-primary);
   font-weight: 500;
@@ -139,7 +139,7 @@
 
 .search-input:focus {
   border-color: var(--border-focus);
-  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 0 2px rgba(226, 176, 66, 0.2);
 }
 
 /* Message Items */
@@ -221,7 +221,7 @@
 }
 
 .status-unread {
-  background: rgba(99, 102, 241, 0.2);
+  background: rgba(226, 176, 66, 0.2);
   color: var(--color-primary);
 }
 

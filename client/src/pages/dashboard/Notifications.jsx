@@ -24,7 +24,7 @@ export default function Notifications() {
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
-                background: !n.read ? 'rgba(99, 102, 241, 0.05)' : 'var(--bg-tertiary)'
+                background: !n.read ? 'rgba(226, 176, 66, 0.05)' : 'var(--bg-tertiary)'
               }}
             >
               <div>

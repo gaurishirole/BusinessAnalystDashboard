@@ -60,7 +60,7 @@
 .sidebar-link.active-link {
   color: #ffffff;
   background: var(--color-primary);
-  box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.3);
+  box-shadow: 0 4px 14px 0 rgba(226, 176, 66, 0.3);
 }
 
 .sidebar-footer {

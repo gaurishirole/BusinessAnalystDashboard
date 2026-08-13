@@ -58,7 +58,7 @@ export default function Dashboard() {
   const { revenueTrend = [], salesByCategory = [], monthlyRevenueVsExpenses = [], customerGrowth = [], topSellingProducts = [] } = charts;
   const { recentOrders = [], recentCustomers = [], lowStockProducts = [], latestNotifications = [] } = tables;
 
-  const COLORS = ['#6366f1', '#10b981', '#f59e0b', '#ec4899', '#8b5cf6'];
+  const COLORS = ['#e2b042', '#38bdf8', '#10b981', '#f59e0b', '#ef4444'];
 
   return (
     <DashboardLayout title="Dashboard">
@@ -92,8 +92,8 @@ export default function Dashboard() {
                 <AreaChart data={revenueTrend} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                   <defs>
                     <linearGradient id="colorRevenueTrend" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#6366f1" stopOpacity={0.4}/>
-                      <stop offset="95%" stopColor="#6366f1" stopOpacity={0}/>
+                      <stop offset="5%" stopColor="#e2b042" stopOpacity={0.4}/>
+                      <stop offset="95%" stopColor="#e2b042" stopOpacity={0}/>
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" stroke="var(--border-color)" />
@@ -107,7 +107,7 @@ export default function Dashboard() {
                       color: 'var(--text-primary)',
                     }}
                   />
-                  <Area type="monotone" dataKey="revenue" stroke="#6366f1" strokeWidth={2} fillOpacity={1} fill="url(#colorRevenueTrend)" name="Revenue ($)" />
+                  <Area type="monotone" dataKey="revenue" stroke="#e2b042" strokeWidth={2} fillOpacity={1} fill="url(#colorRevenueTrend)" name="Revenue ($)" />
                 </AreaChart>
               </ResponsiveContainer>
             </div>
@@ -180,8 +180,8 @@ export default function Dashboard() {
                     }}
                   />
                   <Legend formatter={(value) => <span style={{ color: 'var(--text-primary)', fontSize: '12px' }}>{value}</span>} />
-                  <Bar dataKey="revenue" fill="#6366f1" radius={[4, 4, 0, 0]} name="Revenue ($)" />
-                  <Bar dataKey="expenses" fill="#f59e0b" radius={[4, 4, 0, 0]} name="Expenses ($)" />
+                  <Bar dataKey="revenue" fill="#e2b042" radius={[4, 4, 0, 0]} name="Revenue ($)" />
+                  <Bar dataKey="expenses" fill="#38bdf8" radius={[4, 4, 0, 0]} name="Expenses ($)" />
                 </BarChart>
               </ResponsiveContainer>
             </div>
@@ -207,7 +207,7 @@ export default function Dashboard() {
                       color: 'var(--text-primary)',
                     }}
                   />
-                  <Line type="monotone" dataKey="customers" stroke="#10b981" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 6 }} name="Total Customers" />
+                  <Line type="monotone" dataKey="customers" stroke="#38bdf8" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 6 }} name="Total Customers" />
                 </LineChart>
               </ResponsiveContainer>
             </div>
@@ -237,7 +237,7 @@ export default function Dashboard() {
                       color: 'var(--text-primary)',
                     }}
                   />
-                  <Bar dataKey="sales" fill="#8b5cf6" radius={[0, 4, 4, 0]} name="Sales Volume" />
+                  <Bar dataKey="sales" fill="#e2b042" radius={[0, 4, 4, 0]} name="Sales Volume" />
                 </BarChart>
               </ResponsiveContainer>
             </div>

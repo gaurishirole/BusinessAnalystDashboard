@@ -274,10 +274,10 @@ export default function Reports() {
         {/* KPI Cards Grid */}
         <div className="stats-grid">
           {/* Revenue KPI */}
-          <div className="stats-card glass-panel glass-panel-hover" style={{ background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(17, 24, 39, 0.6))' }}>
+          <div className="stats-card glass-panel glass-panel-hover" style={{ background: 'linear-gradient(135deg, rgba(226, 176, 66, 0.15), rgba(17, 24, 39, 0.6))' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span className="stats-card-title">Total Revenue</span>
-              <div style={{ padding: '0.5rem', background: 'rgba(99, 102, 241, 0.2)', borderRadius: '8px', color: 'var(--color-primary)' }}>
+              <div style={{ padding: '0.5rem', background: 'rgba(226, 176, 66, 0.2)', borderRadius: '8px', color: 'var(--color-primary)' }}>
                 <DollarSign size={20} />
               </div>
             </div>
