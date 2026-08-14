@@ -13,10 +13,10 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
-    const res = login(email, password);
+    const res = await login(email, password);
     if (res.success) {
       navigate('/dashboard');
     } else {
