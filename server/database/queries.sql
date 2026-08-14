@@ -104,7 +104,7 @@ CREATE INDEX idx_notifications_is_read ON notifications(is_read);
 
 -- Insert Seed Users (Password for all accounts is: password123)
 INSERT INTO users (name, email, password_hash, role, status, avatar) VALUES
-('Alex Mercer', 'admin@insightpro.com', '$2b$10$9oqADM5qsPMn4TZsBCZTm.UY8ERbvkHL9G0rTmJhTyyH1pkpUa/qa', 'Admin', 'Active', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces'),
-('Emma Watson', 'manager@insightpro.com', '$2b$10$9oqADM5qsPMn4TZsBCZTm.UY8ERbvkHL9G0rTmJhTyyH1pkpUa/qa', 'Manager', 'Active', 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces'),
-('Robert Downey', 'analyst@insightpro.com', '$2b$10$9oqADM5qsPMn4TZsBCZTm.UY8ERbvkHL9G0rTmJhTyyH1pkpUa/qa', 'Analyst', 'Active', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces');
+('Gauri', 'admin@insightpro.com', '$2b$10$9oqADM5qsPMn4TZsBCZTm.UY8ERbvkHL9G0rTmJhTyyH1pkpUa/qa', 'Admin', 'Active', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces'),
+('Shraddha', 'manager@insightpro.com', '$2b$10$9oqADM5qsPMn4TZsBCZTm.UY8ERbvkHL9G0rTmJhTyyH1pkpUa/qa', 'Manager', 'Active', 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces'),
+('Purva', 'analyst@insightpro.com', '$2b$10$9oqADM5qsPMn4TZsBCZTm.UY8ERbvkHL9G0rTmJhTyyH1pkpUa/qa', 'Analyst', 'Active', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces');
 
